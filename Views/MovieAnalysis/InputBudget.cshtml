@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Enter Budget";
+}
+
+<h2>Enter Budget</h2>
+
+<form action="@Url.Action("MoviesInBudget", "MovieAnalysis")" method="get">
+    <label for="budget">Budget:</label>
+    <input type="number" id="budget" name="budget" step="0.01" required>
+    <button type="submit">Confirm</button>
+</form>

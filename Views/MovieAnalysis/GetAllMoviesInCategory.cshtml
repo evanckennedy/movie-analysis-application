@@ -1,0 +1,24 @@
+﻿@model List<movie_analysis_application.Models.Movie>
+
+<h2>Movies in Category</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Budget</th>
+            <th>Release Year</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Title</td>
+                <td>@movie.Budget</td>
+                <td>@movie.ReleaseYear</td>
+                <td>@movie.Category</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2>Welcome to Movie Analysis Application</h2>
+    <p>
+        This application allows you to perform various analyses on a collection of movies. Here's what you can do:
+    </p>
+    <ul class="list-unstyled">
+        <li>View the collection of movies stores by going to the <a href="@Url.Action("Index", "MovieAnalysis")">Movie List</a>.</li>
+        <li>Filter movies by category using the <a href="@Url.Action("InputCategory", "MovieAnalysis")">Category Filter</a>.</li>
+        <li>Find movies within a specific budget using the <a href="@Url.Action("InputBudget", "MovieAnalysis")">Budget Filter</a>.</li>
+        <li>Explore movies released in the 1990s with the <a href="@Url.Action("MoviesInThe90s", "MovieAnalysis")">Movies in the 90s</a> section.</li>
+        <li>Calculate the overall rating of a specific movie using the <a href="@Url.Action("InputId", "MovieAnalysis")">Calculate Rating</a> feature.</li>
+    </ul>
+</div>
